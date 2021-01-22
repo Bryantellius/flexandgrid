@@ -7,8 +7,24 @@ body {
 }
 
 .wrapper > div {
+  position: relative;
   background-color: lightblue;
   font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
 }
 
 .wrapper {
@@ -112,5 +128,11 @@ body {
   }
   .wrapper > div {
     font-size: 1rem;
+  }
+  .answer {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 }
